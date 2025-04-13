@@ -1,6 +1,6 @@
 import { MongoClient, type Db } from "mongodb"
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/calendar"
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://abhi_nav070:Awd3V9F92_S%3AzFp@cluster0.a0pys1c.mongodb.net/calendar?retryWrites=true&w=majority"
 const MONGODB_DB = process.env.MONGODB_DB || "calendar"
 
 let cachedClient: MongoClient | null = null
