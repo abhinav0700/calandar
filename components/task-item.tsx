@@ -52,7 +52,7 @@ const TaskItem = ({ task, goalColor }: TaskItemProps) => {
       >
         <div className="w-2 h-2 rounded-full" style={{ backgroundColor: goalColor }}></div>
       </div>
-      <span className="text-sm">{task.name}</span>
+      <span className="text-sm text-gray-900">{task.name}</span>
     </li>
   )
 }

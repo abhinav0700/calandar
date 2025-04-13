@@ -17,7 +17,7 @@ const GoalItem = ({ goal, isSelected, onClick }: GoalItemProps) => {
       onClick={onClick}
     >
       <div className="w-3 h-3 rounded-full mr-3" style={{ backgroundColor: goal.color }}></div>
-      <span className="text-sm">{goal.name}</span>
+      <span className="text-sm text-gray-900">{goal.name}</span>
     </li>
   )
 }

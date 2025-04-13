@@ -42,7 +42,7 @@ const Sidebar = () => {
           className="flex items-center justify-between mb-2 cursor-pointer hover:bg-gray-50 p-1 rounded"
           onClick={() => setGoalsExpanded(!goalsExpanded)}
         >
-          <h2 className="text-sm font-semibold text-gray-500">GOALS</h2>
+          <h2 className="text-sm font-semibold text-gray-900">GOALS</h2>
           {goalsExpanded ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
         </div>
 
@@ -51,7 +51,7 @@ const Sidebar = () => {
             {loading ? (
               <LoadingSpinner size="sm" className="py-4" />
             ) : goals.length === 0 ? (
-              <div className="text-sm text-gray-500 p-2">No goals yet. Create one!</div>
+              <div className="text-sm text-gray-900 p-2">No goals yet. Create one!</div>
             ) : (
               <ul className="space-y-1">
                 {goals.map((goal) => (
@@ -75,7 +75,7 @@ const Sidebar = () => {
               className="flex items-center cursor-pointer hover:bg-gray-50 p-1 rounded flex-grow"
               onClick={() => setTasksExpanded(!tasksExpanded)}
             >
-              <h2 className="text-sm font-semibold text-gray-500">TASKS</h2>
+              <h2 className="text-sm font-semibold text-gray-900">TASKS</h2>
               {tasksExpanded ? <ChevronDown className="h-4 w-4 ml-1" /> : <ChevronRight className="h-4 w-4 ml-1" />}
             </div>
             <Button variant="ghost" size="icon" className="h-6 w-6" onClick={() => setIsTaskModalOpen(true)}>
@@ -86,7 +86,7 @@ const Sidebar = () => {
           {tasksExpanded && (
             <div>
               {selectedGoal.tasks.length === 0 ? (
-                <div className="text-sm text-gray-500 p-2">No tasks for this goal yet.</div>
+                <div className="text-sm text-gray-900 p-2">No tasks for this goal yet.</div>
               ) : (
                 <ul className="space-y-1">
                   {selectedGoal.tasks.map((task) => (
